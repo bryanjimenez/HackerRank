@@ -1,12 +1,16 @@
-package all.algorithms.warmup;
+package hackerrank.challenges.time_conversion;
 
 import java.util.Scanner;
-
-public class TimeConversion {
+/**
+ * https://www.hackerrank.com/challenges/time-conversion
+ * @author bxj62
+ *
+ */
+public class Solution {
 
 	
     public static void main(String[] args) {
-        Scanner in = new Scanner("12:00:00AM");
+        Scanner in = new Scanner(System.in);
         String time = in.next();
         String[] p = time.split(":");
         
@@ -23,5 +27,6 @@ public class TimeConversion {
         }
         
         System.out.println(String.format("%02d", hr)+":"+p[1]+":"+p[2].substring(0, 2));
+        in.close();
     }
 }

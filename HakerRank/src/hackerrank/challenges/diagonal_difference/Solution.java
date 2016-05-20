@@ -1,13 +1,13 @@
-package all.algorithms.warmup;
+package hackerrank.challenges.diagonal_difference;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
-
-public class DiagonalDifference {
+/**
+ * https://www.hackerrank.com/challenges/diagonal-difference
+ * @author bxj62
+ *
+ */
+public class Solution {
 	public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
@@ -28,5 +28,6 @@ public class DiagonalDifference {
             }
         }
         System.out.println(Math.abs(diag1-diag2));
+        in.close();
     }
 }

@@ -1,12 +1,14 @@
-package all.algorithms.warmup;
+package hackerrank.challenges.plus_minus;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
-public class PlusMinus {
+/**
+ * https://www.hackerrank.com/challenges/plus-minus
+ * 
+ * @author bxj62
+ *
+ */
+public class Solution {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
@@ -14,7 +16,6 @@ public class PlusMinus {
 		for (int i = 0; i < n; i++) {
 			// spaces
 			int spaces = n - (i + 1);
-			int hash = n - spaces;
 
 			for (int j = 0; j < n; j++) {
 				if (j < spaces) {
@@ -25,6 +26,6 @@ public class PlusMinus {
 			}
 			System.out.println();
 		}
-
+		in.close();
 	}
 }
