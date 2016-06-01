@@ -1,7 +1,6 @@
 package hackerrank.challenges.plus_minus;
 
 import java.util.*;
-
 /**
  * https://www.hackerrank.com/challenges/plus-minus
  * 

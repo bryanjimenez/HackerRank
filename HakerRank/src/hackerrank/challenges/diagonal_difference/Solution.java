@@ -1,7 +1,6 @@
 package hackerrank.challenges.diagonal_difference;
 
 import java.util.*;
-
 /**
  * https://www.hackerrank.com/challenges/diagonal-difference
  * @author bxj62

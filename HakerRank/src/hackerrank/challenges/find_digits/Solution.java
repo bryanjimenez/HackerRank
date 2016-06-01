@@ -1,7 +1,11 @@
 package hackerrank.challenges.find_digits;
 
 import java.util.*;
-
+/**
+ * https://www.hackerrank.com/challenges/find-digits
+ * @author bxj62
+ *
+ */
 public class Solution {
 
     public static void main(String[] args) {

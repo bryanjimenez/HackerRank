@@ -3,7 +3,6 @@ package hackerrank.challenges.sherlock_and_the_beast;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 /**
  * https://www.hackerrank.com/challenges/sherlock-and-the-beast
  * 

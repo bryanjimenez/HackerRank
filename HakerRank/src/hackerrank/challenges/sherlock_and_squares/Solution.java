@@ -1,7 +1,6 @@
 package hackerrank.challenges.sherlock_and_squares;
 
 import java.util.*;
-
 /**
  * https://www.hackerrank.com/challenges/sherlock-and-squares
  * 

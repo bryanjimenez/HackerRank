@@ -1,7 +1,6 @@
 package hackerrank.challenges.the_grid_search;
 
 import java.util.*;
-
 /**
  * https://www.hackerrank.com/challenges/the-grid-search
  * 

@@ -1,7 +1,6 @@
 package hackerrank.challenges.bear_and_workbook;
 
 import java.util.*;
-
 /**
  * https://www.hackerrank.com/challenges/bear-and-workbook
  * 
