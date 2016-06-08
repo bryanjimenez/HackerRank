@@ -8,12 +8,7 @@ import java.util.*;
  */
 public class Solution {
 
-	static void quickSort(int[] ar) {
-
-		partition(ar);
-	}
-
-	static int[] partition(int[] ar) {
+	static int[] quickSort(int[] ar) {
 		if (ar.length > 1) {
 			int p = ar[0];
 			List<Integer> left = new ArrayList<Integer>();
@@ -27,7 +22,7 @@ public class Solution {
 				}
 			}
 
-			return joinArray(partition(toArray(left)), ar[0], partition(toArray(right)));
+			return joinArray(quickSort(toArray(left)), ar[0], quickSort(toArray(right)));
 			
 		} else if (ar.length == 1) {
 			return ar;
