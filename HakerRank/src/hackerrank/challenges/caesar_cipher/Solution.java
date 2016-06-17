@@ -16,7 +16,7 @@ public class Solution {
 		String s = in.next();
 		int k = in.nextInt()%26;
 
-		for (int i = 0; i < s.length(); i++) {
+		for (int i = 0; i < n; i++) {
 
 				char orig = s.charAt(i);
 				char next=orig;
