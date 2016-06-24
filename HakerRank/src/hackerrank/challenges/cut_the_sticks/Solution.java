@@ -1,4 +1,4 @@
-package hackerrank.challeneges.cut_the_sticks;
+package hackerrank.challenges.cut_the_sticks;
 
 import java.util.*;
 /**
