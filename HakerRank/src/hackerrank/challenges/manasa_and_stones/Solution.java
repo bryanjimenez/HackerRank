@@ -1,48 +1,48 @@
 package hackerrank.challenges.manasa_and_stones;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
+/**
+ * https://www.hackerrank.com/challenges/manasa-and-stones
+ * @author bxj62
+ *
+ */
 public class Solution {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		int t = in.nextInt();
+		int t = Integer.parseInt(in.nextLine().trim());
 
 		while (t-- > 0) {
 
-			int n = in.nextInt();
-			int a = in.nextInt();
-			int b = in.nextInt();
+			int n = Integer.parseInt(in.nextLine().trim());
+			int a = Integer.parseInt(in.nextLine().trim());
+			int b = Integer.parseInt(in.nextLine().trim());
 
-			for (int i = 0; i < 2*(n-1); i++) {
-				String binary = Integer.toBinaryString(i);
-				System.out.println(binary);
-				int sum =0;
-				for(int j=0;j<n-1;j++){
-					System.out.print(j);
-					if(binary.length()<n-j){
-						sum+=a;
-					}else{
-						System.out.println("b:"+binary.charAt(n-1-binary.length()-j));
-						if(binary.charAt(n-1-binary.length()-j)=='0'){
-							sum+=a;
-						}else{
-							sum+=b;
-						}
-					}
+			Set<Integer> mySet = new TreeSet<Integer>();
+			mySet.add(0);
+			
+			while (n-->1) {
+				Set<Integer> newSet = new TreeSet<Integer>();
+
+				for(int x:mySet){
+					newSet.add(x+a);
+					newSet.add(x+b);
 				}
-				
-				System.out.println("sum"+sum);
+
+				mySet = newSet;
 			}
+			printSet(mySet);
 
 		}
 
 		in.close();
-		return null;
+	}
+	
+	public static void printSet(Set<Integer> s){
+		for(int x:s){
+			System.out.print(x+" ");
+		}
+		System.out.println();
 	}
 }
